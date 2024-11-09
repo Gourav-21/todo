@@ -49,7 +49,7 @@ function App() {
   }
 
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div className="flex mt-20 items-center justify-center">
       <div>
         <CardHeader>
           <CardTitle className="text-3xl text-center">Todo App</CardTitle>
