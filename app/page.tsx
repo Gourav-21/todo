@@ -27,7 +27,7 @@ function App() {
   }
 
   function toggleTask(index: number) {
-    const updatedTodos = todos.map((todo, todoIndex) =>
+    const updatedTodos = todos.map((todo) =>
       todo.id === index ? { ...todo, completed: !todo.completed } : todo
     );
     setTodos(updatedTodos);
@@ -67,7 +67,7 @@ function App() {
           </form >
           <div>
             <ScrollArea className="h-[400px] w-[350px]">
-              {todos.map((todo, index) => (
+              {todos.map((todo) => (
                 <TodoItem
                   key={todo.id}
                   todo={todo}
