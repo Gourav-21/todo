@@ -66,6 +66,7 @@ function App() {
             <Button>Submit</Button>
           </form >
           <div>
+            {todos.length === 0 && <p className="text-center mt-20">No tasks added yet</p>}
             <ScrollArea className="h-[400px] w-[350px]">
               {todos.map((todo) => (
                 <TodoItem
