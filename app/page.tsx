@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { useState } from "react";
 
 interface Todo {
@@ -65,7 +66,7 @@ function App() {
             <Button>Submit</Button>
           </form >
           <div>
-            <ul>
+            <ScrollArea className="h-[400px] w-[350px]">
               {todos.map((todo, index) => (
                 <TodoItem
                   key={todo.id}
@@ -77,7 +78,7 @@ function App() {
                   editingId={editingId}
                 />
               ))}
-            </ul>
+            </ScrollArea>
           </div>
         </CardContent>
       </div>
